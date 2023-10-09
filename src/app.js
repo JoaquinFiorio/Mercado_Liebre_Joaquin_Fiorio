@@ -26,6 +26,6 @@ app.post('/register', (req, res) => {
 });
 
 const port = 3030;
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Servidor iniciado en http://localhost:${port}`);
 });
